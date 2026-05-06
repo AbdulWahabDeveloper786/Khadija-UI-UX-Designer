@@ -60,11 +60,10 @@ export function Navbar({ onNavigate }: NavbarProps) {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-400 ${
-          scrolled
-            ? 'bg-charcoal/80 backdrop-blur-xl border-b border-cream/5 py-5'
-            : 'bg-transparent py-8'
-        }`}
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-400 ${scrolled
+          ? 'bg-charcoal/80 backdrop-blur-xl border-b border-cream/5 py-5'
+          : 'bg-transparent py-8'
+          }`}
         style={{ transitionDuration: '400ms' }}
       >
         <div className="mx-auto flex items-center justify-between" style={{ maxWidth: 1400, padding: '0 clamp(24px, 4vw, 80px)' }}>
@@ -82,9 +81,8 @@ export function Navbar({ onNavigate }: NavbarProps) {
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`nav-link font-body text-[13px] uppercase tracking-[2px] text-cream/80 hover:text-cream transition-colors ${
-                  activeSection === item.id ? 'active' : ''
-                }`}
+                className={`nav-link font-body text-[13px] uppercase tracking-[2px] text-cream/80 hover:text-cream transition-colors ${activeSection === item.id ? 'active' : ''
+                  }`}
                 data-cursor="link"
               >
                 {item.label}
@@ -105,14 +103,12 @@ export function Navbar({ onNavigate }: NavbarProps) {
             data-cursor="link"
           >
             <span
-              className={`block w-6 h-[1px] bg-cream transition-all duration-300 ${
-                mobileOpen ? 'rotate-45 translate-y-[3.5px]' : ''
-              }`}
+              className={`block w-6 h-[1px] bg-cream transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-[3.5px]' : ''
+                }`}
             />
             <span
-              className={`block w-6 h-[1px] bg-cream transition-all duration-300 ${
-                mobileOpen ? '-rotate-45 -translate-y-[3.5px]' : ''
-              }`}
+              className={`block w-6 h-[1px] bg-cream transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-[3.5px]' : ''
+                }`}
             />
           </button>
         </div>
@@ -120,9 +116,8 @@ export function Navbar({ onNavigate }: NavbarProps) {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 z-40 bg-charcoal transition-all duration-500 flex flex-col items-center justify-center gap-8 ${
-          mobileOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
+        className={`fixed inset-0 z-40 bg-charcoal transition-all duration-500 flex flex-col items-center justify-center gap-8 ${mobileOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+          }`}
       >
         {navItems.map((item) => (
           <button
