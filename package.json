@@ -1,7 +1,7 @@
 {
-  "name": "my-app",
+  "name": "khadija-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "next dev",
@@ -9,7 +9,11 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
+    "next": "15.3.1",
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-alert-dialog": "^1.1.15",
@@ -48,12 +52,11 @@
     "lenis": "^1.3.23",
     "lucide-react": "^0.562.0",
     "next-themes": "^0.4.6",
-    "react": "^19.2.0",
+    "react": "^19.1.0",
     "react-day-picker": "^9.13.0",
-    "react-dom": "^19.2.0",
-    "react-hook-form": "^7.70.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.55.0",
     "react-resizable-panels": "^4.2.2",
-    "next": "latest",
     "recharts": "^2.15.4",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.4.0",

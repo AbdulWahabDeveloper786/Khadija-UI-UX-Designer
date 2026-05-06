@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Ensure that next.js treats lenis nicely if there's any client specific bundle optimization needed
+  // Allow video/image assets from the public directory without issues
+  images: {
+    unoptimized: false,
+    formats: ['image/webp', 'image/avif'],
+  },
 };
 
 export default nextConfig;

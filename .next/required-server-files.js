@@ -49,7 +49,8 @@ self.__SERVER_FILES_MANIFEST={
       "disableStaticImages": false,
       "minimumCacheTTL": 14400,
       "formats": [
-        "image/webp"
+        "image/webp",
+        "image/avif"
       ],
       "maximumRedirects": 3,
       "maximumResponseBody": 50000000,

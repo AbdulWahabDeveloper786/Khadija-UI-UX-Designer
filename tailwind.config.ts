@@ -47,9 +47,9 @@ export default {
         "copper-hover": "#d4b87a",
       },
       fontFamily: {
-        display: ['"Playfair Display"', 'serif'],
-        body: ['Inter', 'sans-serif'],
-        mono: ['"JetBrains Mono"', 'monospace'],
+        display: ['var(--font-playfair)', 'serif'],
+        body: ['var(--font-inter)', 'sans-serif'],
+        mono: ['var(--font-jetbrains)', 'monospace'],
       },
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",
